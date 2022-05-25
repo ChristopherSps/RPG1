@@ -9,7 +9,7 @@ html {
 
 #border{
   border: 2px black;
-  background-color: rgb(47, 70, 45);
+  background-image: linear-gradient(#722F37, #8D021F, #C21807);
   padding: 10px;
   border-radius: 25px;
   width: 880px;
