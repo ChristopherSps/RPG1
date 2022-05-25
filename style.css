@@ -4,7 +4,7 @@ body {
   height: 100%;
 }
 html {
-  background-image: linear-gradient(lightgreen, #50C878, #228B22);
+  background-image: linear-gradient(lightgreen, #50C878, #228B22, #1E5162, #338BA8, #67B7D1);
 }
 
 #border{
