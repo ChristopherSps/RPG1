@@ -48,12 +48,12 @@ function checkAnswers(answer) {
 function sceneTest(){
   addImage("Character.gif");
   story("You're in your bed, struggling to wake up. You've been dreaming of fighting off monsters as if you are a pirate. Although it was cut short when a ringing noise came bearing in!<br>You sat up, still asleep as you scramble to find that horrendous sound... it was your alarm clock.<br>It was a lousy Monday morning, what should you do?");
-  choices = ["Sleep in","Cancel alarm","Jaoquian"];
+  choices = ["Sleep in","Cancel alarm",];
   answer = setOptions(choices);
 }
 
 function missSchool(){
-  addImage("sleepDream.png");
+  addImage("nessie.gif");
   var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
   'You slept in and missed school.'
   ];
