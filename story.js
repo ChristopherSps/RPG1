@@ -21,8 +21,8 @@ function checkAnswers(answer) {
     case "Horizon":
       Horiz();
       break;
-    case "Skip":
-      skipIgnore();
+    case "Crytpo":
+      Cryp();
       break;
     case "Lets eat Breakfast":
       eatIgnore();
@@ -83,8 +83,8 @@ function Horiz(){
   answer = setOptions(choices);
 }
 
-function skipIgnore(){
-  addImage("dizzyMan.png");
+function Cryp(){
+  addImage("Crypt.png");
   var messages = [ 'You skip breakfast and head towards your school bag, before putting it on you realize that youre a little lightheaded and freezing.', 
   'Your vision goes blurry. YOU PASS OUT!',
   'Ya know breakfast is the most important meal of the day, also next time you should get dressed'
