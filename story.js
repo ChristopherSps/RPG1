@@ -15,11 +15,11 @@ function checkAnswers(answer) {
     case "Wattson":
       Watt();
       break;
-    case "Get dressed":
-      getDressed();
+    case "Wraith":
+      Wraith();
       break;
-    case "Ignore":
-      ignoreDressed();
+    case "Horizon":
+      Horiz();
       break;
     case "Skip":
       skipIgnore();
