@@ -53,7 +53,7 @@ function characterSelection(){
 }
 
 function Life(){
-  addImage("");
+  addImage("Life.png");
   var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
   'You slept in and missed school.'
   ];
@@ -70,6 +70,7 @@ function Watt(){
 }
 
 function Wraith(){
+  addImage("");
   story("You get out of bed and get out of your pajamas and put on your outfit for today. You look at yourself in the mirror, you look fabulous!<br>You head towards the kitchen but stop when you see the time. Hm, is it too late for breakfast?");
   choices = ["Eat Breakfast","Skip it"];
   answer = setOptions(choices);
