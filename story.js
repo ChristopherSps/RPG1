@@ -7,7 +7,7 @@ var scene1=characterSelection;
 function checkAnswers(answer) {
   switch(answer) {
     case "LifeLine":
-      missSchool();
+      Life();
       break;
     case "Start over":
       characterSelection();
@@ -47,17 +47,17 @@ function checkAnswers(answer) {
 
 function characterSelection(){
   addImage("Character.gif");
-  story("You're in your bed, struggling to wake up. You've been dreaming of fighting off monsters as if you are a pirate. Although it was cut short when a ringing noise came bearing in!<br>You sat up, still asleep as you scramble to find that horrendous sound... it was your alarm clock.<br>It was a lousy Monday morning, what should you do?");
+  story("You wake up in a room with 5 other legends but your surprised when you see a fallen legend on the floor. As your eyes focus on the fallen legend, you realize that it is your friend pathfinder is dead on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a fallen legend beside all of you. <br> Choose your character to be!");
   choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Valkyrie"];
   answer = setOptions(choices);
 }
 
-function missSchool(){
+function Life(){
   addImage("nessie.gif");
   var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
   'You slept in and missed school.'
   ];
-  delayText(messages, 1000);
+  delayText(messages, 500);
   choices = ["Start over"];
   answer = setOptions(choices);
 }
