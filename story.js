@@ -53,7 +53,7 @@ function characterSelection(){
 }
 
 function Life(){
-  addImage("nessie.gif");
+  addImage("LifeLine.jfif");
   var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
   'You slept in and missed school.'
   ];
