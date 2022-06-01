@@ -24,8 +24,8 @@ function checkAnswers(answer) {
     case "Crypto":
       Cryp();
       break;
-    case "Lets eat Breakfast":
-      eatIgnore();
+    case "Rampart":
+      Ramp();
       break;
     case "Skip it":
       dressedSkip();
@@ -48,7 +48,7 @@ function checkAnswers(answer) {
 function characterSelection(){
   addImage("Character.gif");
   story("You wake up in a room with 5 other legends but your surprised when you see a fallen legend on the floor. As your eyes focus on the fallen legend, you realize that it is your friend pathfinder is dead on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a fallen legend beside all of you. <br> Choose your character to be!");
-  choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Valkyrie"];
+  choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Rampart"];
   answer = setOptions(choices);
 }
 
@@ -94,7 +94,7 @@ function Cryp(){
   answer = setOptions(choices);
 }
 
-function eatIgnore(){
+function Ramp(){
   addImage("greenKitchen.png");
   var messages = [ 'You go for a quick bowl of cereal after ignoring the breeze. As you are eating, you wonder if youve done your homework, but when you stand up you can barely move.',
   'Youre too cold.',
