@@ -95,7 +95,7 @@ function Cryp(){
 }
 
 function Ramp(){
-  addImage("greenKitchen.png");
+  addImage("Ramp.png");
   var messages = [ 'You go for a quick bowl of cereal after ignoring the breeze. As you are eating, you wonder if youve done your homework, but when you stand up you can barely move.',
   'Youre too cold.',
   'You pass out from almost freezing to death. Wow<br>What a move, maybe the breeze should’ve given you the clue.'
