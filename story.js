@@ -6,14 +6,14 @@ var scene1=characterSelection;
 
 function checkAnswers(answer) {
   switch(answer) {
-    case "LifeLine":
-      Life();
-      break;
     case "Start over":
       characterSelection();
       break;
-    case "Cancel alarm":
-      offAlarm();
+    case "LifeLine":
+      Life();
+      break;
+    case "Wattson":
+      Watt();
       break;
     case "Get dressed":
       getDressed();
@@ -53,7 +53,7 @@ function characterSelection(){
 }
 
 function Life(){
-  addImage("LifeLine.jfif");
+  addImage("");
   var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
   'You slept in and missed school.'
   ];
@@ -62,8 +62,8 @@ function Life(){
   answer = setOptions(choices);
 }
 
-function offAlarm(){
-  addImage("bedroomPhoto.png");
+function Watt(){
+  addImage("Wattson.jfif");
   story("You forced yourself up as if it was a chore. You turn off your annoying alarm, flick on your lamp, and rub your eyes before seeing clear. But now what?");
   choices = ["Get dressed","Ignore"];
   answer = setOptions(choices);
