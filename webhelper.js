@@ -55,7 +55,7 @@ function delayText(text, delay) {
 function addImage(imageURL){
   let image = document.createElement("img");
   image.src = imageURL;
-  image.setAttribute("width", "400px");
+  image.setAttribute("width", "350px");
   var storyBox = document.getElementById("storybox");
   if (hasImage == true) {
       storyBox.innerHTML="";

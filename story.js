@@ -2,15 +2,15 @@
 
 // variables
 // var name = "";
-var scene1=sceneTest;
+var scene1=characterSelection;
 
 function checkAnswers(answer) {
   switch(answer) {
-    case "Sleep in":
+    case "LifeLine":
       missSchool();
       break;
     case "Start over":
-      sceneTest();
+      characterSelection();
       break;
     case "Cancel alarm":
       offAlarm();
@@ -45,10 +45,10 @@ function checkAnswers(answer) {
     }
 }
 
-function sceneTest(){
+function characterSelection(){
   addImage("Character.gif");
   story("You're in your bed, struggling to wake up. You've been dreaming of fighting off monsters as if you are a pirate. Although it was cut short when a ringing noise came bearing in!<br>You sat up, still asleep as you scramble to find that horrendous sound... it was your alarm clock.<br>It was a lousy Monday morning, what should you do?");
-  choices = ["Sleep in","Cancel alarm",];
+  choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Valkyrie"];
   answer = setOptions(choices);
 }
 
