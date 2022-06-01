@@ -21,7 +21,7 @@ function checkAnswers(answer) {
     case "Horizon":
       Horiz();
       break;
-    case "Crytpo":
+    case "Crypto":
       Cryp();
       break;
     case "Lets eat Breakfast":
