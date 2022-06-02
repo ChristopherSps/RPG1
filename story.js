@@ -47,7 +47,7 @@ function checkAnswers(answer) {
 
 function characterSelection(){
   addImage("Character.gif");
-  story("You wake up in a room with 5 other legends but your surprised when you see a fallen legend on the floor. As your eyes focus on the fallen legend, you realize that it is your friend pathfinder is dead on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a fallen legend beside all of you. <br> Choose your character to be!");
+  story("You wake up in a room with 5 other legends but your surprised when you see a fallen legend on the floor. As your eyes focus on the fallen legend, you realize that it is your friend pathfinder is dead on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a fallen legend beside all of you. <br> Choose your legend to be!");
   choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Rampart"];
   answer = setOptions(choices);
 }
@@ -57,7 +57,7 @@ function Life(){
   var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
   'You slept in and missed school.'
   ];
-  delayText(messages, 500);
+  delayText(messages, 750);
   choices = ["Start over"];
   answer = setOptions(choices);
 }
@@ -96,7 +96,7 @@ function Cryp(){
 
 function Ramp(){
   addImage("Ramp.png");
-  var messages = [ 'You go for a quick bowl of cereal after ignoring the breeze. As you are eating, you wonder if youve done your homework, but when you stand up you can barely move.',
+  var messages = ['You go for a quick bowl of cereal after ignoring the breeze. As you are eating, you wonder if youve done your homework, but when you stand up you can barely move.',
   'Youre too cold.',
   'You pass out from almost freezing to death. Wow<br>What a move, maybe the breeze should’ve given you the clue.'
   ];
