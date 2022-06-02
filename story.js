@@ -72,7 +72,7 @@ function characterSelection(){
 
 function Life(){
   addImage("Life.png");
-  var messages = ["You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.","You slept in and missed school."];
+  var messages = ["A Legend with healing abilities, Lifeline is a Legend best for keeping her team alive and up in a firefight. Her tactical ability is D.O.C, a Heal Drone. Heal Drone places an immobile drone that heals all players nearby over time. Her passive ability, Combat Revive causes her reviving of teammates to be automated by her drone."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection LifeLine","Choose Different Character"];
   answer = setOptions(choices);
