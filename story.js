@@ -9,6 +9,12 @@ function checkAnswers(answer) {
     case "Start over":
       characterSelection();
       break;
+    case "Choose Different Character":
+      characterSelection();
+    break;
+    case "Confirm Character Selection":
+      dressedSkip();
+    break;
     case "LifeLine":
       Life();
       break;
@@ -26,9 +32,6 @@ function checkAnswers(answer) {
       break;
     case "Rampart":
       Ramp();
-      break;
-    case "Confirm Character Selection":
-      dressedSkip();
       break;
     case "Eat Breakfast":
       dressedEat();
@@ -62,7 +65,7 @@ function Life(){
 
 function Watt(){
   addImage("Watts.png");
-  story("You forced yourself up as if it was a chore. You turn off your annoying alarm, flick on your lamp, and rub your eyes before seeing clear. But now what?");
+  var messages = ["You forced yourself up as if it was a chore. You turn off your annoying alarm, flick on your lamp, and rub your eyes before seeing clear. But now what?"];
   delayText(messages, 750);
   choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
@@ -70,7 +73,7 @@ function Watt(){
 
 function Wraith(){
   addImage("Wrai.png");
-  story("You get out of bed and get out of your pajamas and put on your outfit for today. You look at yourself in the mirror, you look fabulous!<br>You head towards the kitchen but stop when you see the time. Hm, is it too late for breakfast?");
+  var messages =["You get out of bed and get out of your pajamas and put on your outfit for today. You look at yourself in the mirror, you look fabulous!<br>You head towards the kitchen but stop when you see the time. Hm, is it too late for breakfast?"];
   delayText(messages, 750);
   choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
@@ -78,7 +81,7 @@ function Wraith(){
 
 function Horiz(){
   addImage("Hori.png");
-  story("You get out of bed and get out of your pajamas…that's all.<br>You head towards the kitchen but stop when you feel a cool breeze. Hm could you be missing something?");
+  var messages = ["You get out of bed and get out of your pajamas…that's all.<br>You head towards the kitchen but stop when you feel a cool breeze. Hm could you be missing something?"];
   delayText(messages, 750);
   choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
@@ -86,7 +89,7 @@ function Horiz(){
 
 function Cryp(){
   addImage("Crypt.png");
-  var messages = [ 'You skip breakfast and head towards your school bag, before putting it on you realize that youre a little lightheaded and freezing.', 
+  var messages = ['You skip breakfast and head towards your school bag, before putting it on you realize that youre a little lightheaded and freezing.', 
   'Your vision goes blurry. YOU PASS OUT!',
   'Ya know breakfast is the most important meal of the day, also next time you should get dressed'
  ];
