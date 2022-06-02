@@ -80,7 +80,7 @@ function Life(){
 
 function Watt(){
   addImage("Watts.png");
-  var messages = [""];
+  var messages = ["Wattson is an electricity-based Defensive Legend. Her tactical ability, Perimeter Security places fence poles with connecting beams of electricity that damage and stun enemies that pass through the beams. Her passive ability, Spark of Genius causes her health to slowly regenerate over time and causes an Ultimate Accelerant to fully recharge her ultimate ability. Her ultimate ability Interception Pylon destroys all grenades, missiles, and other throwables when they get near."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Wattson","Choose Different Character"];
   answer = setOptions(choices);
