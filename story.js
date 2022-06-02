@@ -8,43 +8,58 @@ function checkAnswers(answer) {
   switch(answer) {
     case "Start over":
       characterSelection();
-      break;
+    break;
     case "Choose Different Character":
       characterSelection();
     break;
-    case "Confirm Character Selection":
-      dressedSkip();
-    break;
     case "LifeLine":
       Life();
-      break;
+    break;
+    case "Confirm Character Selection LifeLine":
+      dressedSkip();
+    break;
     case "Wattson":
       Watt();
-      break;
+    break;
+    case "Confirm Character Selection Wattson":
+      dressedSkip();
+    break;
     case "Wraith":
       Wraith();
-      break;
+    break;
+    case "Confirm Character Selection Wraith":
+      dressedSkip();
+    break;
     case "Horizon":
       Horiz();
-      break;
+    break;
+    case "Confirm Character Selection Horizon":
+      dressedSkip();
+    break;
     case "Crypto":
       Cryp();
-      break;
+    break;
+    case "Confirm Character Selection Crypto":
+      dressedSkip();
+    break;
     case "Rampart":
       Ramp();
-      break;
+    break;
+    case "Confirm Character Selection Rampart":
+      dressedSkip();
+    break;
     case "Eat Breakfast":
       dressedEat();
-      break;
+    break;
     case "You didn't":
       noHomework();
-      break;
+    break;
     case "You did":
       yesHomework();
-      break;
+    break;
     case "You won!":
       youWon();
-      break;
+    break;
     }
 }
 
@@ -59,7 +74,7 @@ function Life(){
   addImage("Life.png");
   var messages = ["You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.","You slept in and missed school."];
   delayText(messages, 750);
-  choices = ["Confirm Character Selection","Choose Different Character"];
+  choices = ["Confirm Character Selection LifeLine","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -67,7 +82,7 @@ function Watt(){
   addImage("Watts.png");
   var messages = ["You forced yourself up as if it was a chore. You turn off your annoying alarm, flick on your lamp, and rub your eyes before seeing clear. But now what?"];
   delayText(messages, 750);
-  choices = ["Confirm Character Selection","Choose Different Character"];
+  choices = ["Confirm Character Selection Wattson","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -75,7 +90,7 @@ function Wraith(){
   addImage("Wrai.png");
   var messages =["You get out of bed and get out of your pajamas and put on your outfit for today. You look at yourself in the mirror, you look fabulous!<br>You head towards the kitchen but stop when you see the time. Hm, is it too late for breakfast?"];
   delayText(messages, 750);
-  choices = ["Confirm Character Selection","Choose Different Character"];
+  choices = ["Confirm Character Selection Wraith","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -83,7 +98,7 @@ function Horiz(){
   addImage("Hori.png");
   var messages = ["You get out of bed and get out of your pajamas…that's all.<br>You head towards the kitchen but stop when you feel a cool breeze. Hm could you be missing something?"];
   delayText(messages, 750);
-  choices = ["Confirm Character Selection","Choose Different Character"];
+  choices = ["Confirm Character Selection Horizon","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -94,7 +109,7 @@ function Cryp(){
   'Ya know breakfast is the most important meal of the day, also next time you should get dressed'
  ];
   delayText(messages, 750);
-  choices = ["Confirm Character Selection","Choose Different Character"];
+  choices = ["Confirm Character Selection Crypto","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -105,7 +120,7 @@ function Ramp(){
   'You pass out from almost freezing to death. Wow<br>What a move, maybe the breeze should’ve given you the clue.'
   ];
   delayText(messages, 750);
-  choices = ["Confirm Character Selection","Choose Different Character"];
+  choices = ["Confirm Character Selection Rampart","Choose Different Character"];
   answer = setOptions(choices);
 }
 
