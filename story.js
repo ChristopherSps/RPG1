@@ -80,7 +80,7 @@ function Life(){
 
 function Watt(){
   addImage("Watts.png");
-  var messages = ["You forced yourself up as if it was a chore. You turn off your annoying alarm, flick on your lamp, and rub your eyes before seeing clear. But now what?"];
+  var messages = [""];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Wattson","Choose Different Character"];
   answer = setOptions(choices);
@@ -88,7 +88,7 @@ function Watt(){
 
 function Wraith(){
   addImage("Wrai.png");
-  var messages =["You get out of bed and get out of your pajamas and put on your outfit for today. You look at yourself in the mirror, you look fabulous!<br>You head towards the kitchen but stop when you see the time. Hm, is it too late for breakfast?"];
+  var messages =["A versatile Legend, Wraith can reposition and flank enemies with her abilities. Wraith's tactical ability Into the Void allows her to reposition or take cover while being invincible for 4 seconds. Wraith's ultimate ability is Dimensional Rift. Dimensional Rift places an entrance and exit portal that allows her squad to be safely transported over long distances. Her passive ability Voices from the Void. Voices from the Void gives her and her teammates audible warnings about enemies aiming at them."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Wraith","Choose Different Character"];
   answer = setOptions(choices);
