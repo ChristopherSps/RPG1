@@ -27,7 +27,7 @@ function checkAnswers(answer) {
     case "Rampart":
       Ramp();
       break;
-    case "Skip it":
+    case "Confirm Character Selection":
       dressedSkip();
       break;
     case "Eat Breakfast":
@@ -54,32 +54,33 @@ function characterSelection(){
 
 function Life(){
   addImage("Life.png");
-  var messages = [ 'You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.',
-  'You slept in and missed school.'
-  ];
+  var messages = ["You snooze your alarm and let it ring before it gives up. You fall back asleep, Hm it seems though you should’ve been awake.","You slept in and missed school."];
   delayText(messages, 750);
-  choices = ["Start over"];
+  choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
 }
 
 function Watt(){
   addImage("Watts.png");
   story("You forced yourself up as if it was a chore. You turn off your annoying alarm, flick on your lamp, and rub your eyes before seeing clear. But now what?");
-  choices = ["Get dressed","Ignore"];
+  delayText(messages, 750);
+  choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
 }
 
 function Wraith(){
   addImage("Wrai.png");
   story("You get out of bed and get out of your pajamas and put on your outfit for today. You look at yourself in the mirror, you look fabulous!<br>You head towards the kitchen but stop when you see the time. Hm, is it too late for breakfast?");
-  choices = ["Eat Breakfast","Skip it"];
+  delayText(messages, 750);
+  choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
 }
 
 function Horiz(){
   addImage("Hori.png");
   story("You get out of bed and get out of your pajamas…that's all.<br>You head towards the kitchen but stop when you feel a cool breeze. Hm could you be missing something?");
-  choices = ["Lets eat Breakfast","Skip"];
+  delayText(messages, 750);
+  choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -89,8 +90,8 @@ function Cryp(){
   'Your vision goes blurry. YOU PASS OUT!',
   'Ya know breakfast is the most important meal of the day, also next time you should get dressed'
  ];
-  delayText(messages, 1000);
-  choices = ["Start over"];
+  delayText(messages, 750);
+  choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
 }
 
@@ -100,8 +101,8 @@ function Ramp(){
   'Youre too cold.',
   'You pass out from almost freezing to death. Wow<br>What a move, maybe the breeze should’ve given you the clue.'
   ];
-  delayText(messages, 1000);
-  choices = ["Start over"];
+  delayText(messages, 750);
+  choices = ["Confirm Character Selection","Choose Different Character"];
   answer = setOptions(choices);
 }
 
