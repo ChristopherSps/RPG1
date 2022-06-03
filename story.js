@@ -104,7 +104,7 @@ function Horiz(){
 
 function Cryp(){
   addImage("Crypt.png");
-  var messages = ["A Recon Legend, Crypto takes to the skies with his Surveillance Drone, revealing enemies for Crypto and his squad using Neurolink."];
+  var messages = ["A Recon Legend, Crypto takes to the skies with his Surveillance Drone named, hack, revealing enemies for Crypto and his squad using Neurolink. Crytpo has the ability to look through his hack and see his surroundings while controlling hack."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Crypto","Choose Different Character"];
   answer = setOptions(choices);
