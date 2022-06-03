@@ -16,7 +16,7 @@ function checkAnswers(answer) {
       Life();
     break;
     case "Confirm Character Selection LifeLine":
-      dressedSkip();
+      WhatToDoLifeLine();
     break;
     case "Wattson":
       Watt();
@@ -78,6 +78,13 @@ function Life(){
   answer = setOptions(choices);
 }
 
+function WhatToDoLifeLine(){
+  addImage("busStop.png");
+  story("As you examine pathfinder up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
+  choices = ["Try to repair pathfinder","Give up on repairing pathfinder","Salvage pathfinder parts to use"];
+  answer = setOptions(choices);
+}
+
 function Watt(){
   addImage("Watts.png");
   var messages = ["Wattson is an electricity-based Defensive Legend. Her tactical ability, Perimeter Security places fence poles with connecting beams of electricity that damage and stun enemies that pass through the beams. Her passive ability, Spark of Genius causes her health to slowly regenerate over time and causes an Ultimate Accelerant to fully recharge her ultimate ability. Her ultimate ability Interception Pylon destroys all grenades, missiles, and other throwables when they get near."];
@@ -115,13 +122,6 @@ function Ramp(){
   var messages = ["Rampart is a Defensive Legend that specializes in securing areas through firepower. Her tactical ability Amped Cover places a rectangular wall. The upper half of a wall blocks a certain amount of bullets taken from one direction, and enhances any bullets fired through from the other direction. Her passive ability Modded Loader increases reload speed and magazine size with LMGs and her ultimate. Her ultimate ability Mobile Minigun named, Sheila, allows her to use a minigun that she can either carry or place down."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Rampart","Choose Different Character"];
-  answer = setOptions(choices);
-}
-
-function dressedSkip(){
-  addImage("busStop.png");
-  story("You believe you have no time for breakfast, so you head out early. The wind is blowing as you walk towards the bus stop. When you arrive there you stand and wait…<br>And wait…<br>And wait…<br>And wait… <br>You’ve been waiting for almost an hour now, Your stomach is screaming at you for food. It's painful. You go back home and miss school for the day, hm maybe you did have time to eat breakfast.");
-  choices = ["Start over"];
   answer = setOptions(choices);
 }
 
