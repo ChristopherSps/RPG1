@@ -96,7 +96,7 @@ function Wraith(){
 
 function Horiz(){
   addImage("Hori.png");
-  var messages = ["You get out of bed and get out of your pajamas…that's all.<br>You head towards the kitchen but stop when you feel a cool breeze. Hm could you be missing something?"];
+  var messages = ["Horizon is an Offensive Legend with gravity-based abilities. Her tactical ability Gravity Lift, when deployed on the ground, lifts any player that steps into it into the air. Her passive ability Spacewalk increases her in-air movement speed and decreases her movement delay after falling from a height."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Horizon","Choose Different Character"];
   answer = setOptions(choices);
@@ -104,10 +104,7 @@ function Horiz(){
 
 function Cryp(){
   addImage("Crypt.png");
-  var messages = ['You skip breakfast and head towards your school bag, before putting it on you realize that youre a little lightheaded and freezing.', 
-  'Your vision goes blurry. YOU PASS OUT!',
-  'Ya know breakfast is the most important meal of the day, also next time you should get dressed'
- ];
+  var messages = ["A Recon Legend, Crypto takes to the skies with his Surveillance Drone, revealing enemies for Crypto and his squad using Neurolink."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Crypto","Choose Different Character"];
   answer = setOptions(choices);
@@ -115,10 +112,7 @@ function Cryp(){
 
 function Ramp(){
   addImage("Ramp.png");
-  var messages = ['You go for a quick bowl of cereal after ignoring the breeze. As you are eating, you wonder if youve done your homework, but when you stand up you can barely move.',
-  'Youre too cold.',
-  'You pass out from almost freezing to death. Wow<br>What a move, maybe the breeze should’ve given you the clue.'
-  ];
+  var messages = ["Rampart is a Defensive Legend that specializes in securing areas through firepower. Her tactical ability Amped Cover places a rectangular wall. The upper half of a wall blocks a certain amount of bullets taken from one direction, and enhances any bullets fired through from the other direction. Her passive ability Modded Loader increases reload speed and magazine size with LMGs and her ultimate. Her ultimate ability Mobile Minigun named, Sheila, allows her to use a minigun that she can either carry or place down."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Rampart","Choose Different Character"];
   answer = setOptions(choices);
