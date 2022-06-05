@@ -65,7 +65,7 @@ function checkAnswers(answer) {
 
 function characterSelection(){
   addImage("Character.gif");
-  story("You wake up in a room with 5 other legends but your surprised when you see a fallen legend on the floor. As your eyes focus on the fallen legend, you realize that it is your friend pathfinder is dead on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a fallen legend beside all of you. <br> Choose your legend to be!");
+  story("You wake up in a room with 5 other legends but your surprised when you see a broken robot on the floor. As your eyes focus on the broken robot, you realize that the broken robot was badly damaged and mangled on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a broken robot beside all of you. <br> Choose your legend to be!");
   choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Rampart"];
   answer = setOptions(choices);
 }
@@ -80,8 +80,8 @@ function Life(){
 
 function WhatToDoLifeLine(){
   addImage("busStop.png");
-  story("As you examine pathfinder up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
-  choices = ["Try to repair pathfinder","Give up on repairing pathfinder","Salvage pathfinder parts to use"];
+  story("As you examine the broken robot up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
+  choices = ["Try to repair the broken robot","Give up on repairing the broken robot","Salvage robot parts to use from the broken robot"];
   answer = setOptions(choices);
 }
 
