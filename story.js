@@ -34,7 +34,7 @@ function checkAnswers(answer) {
       Watt();
     break;
     case "Confirm Character Selection Wattson":
-      dressedSkip();
+      WhatToDoWattson();
     break;
     case "Wraith":
       Wraith();
@@ -118,6 +118,13 @@ function Watt(){
   var messages = ["Wattson is an electricity-based Defensive Legend. Her tactical ability, Perimeter Security places fence poles with connecting beams of electricity that damage and stun enemies that pass through the beams. Her passive ability, Spark of Genius causes her health to slowly regenerate over time and causes an Ultimate Accelerant to fully recharge her ultimate ability. Her ultimate ability Interception Pylon destroys all grenades, missiles, and other throwables when they get near."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Wattson","Choose Different Character"];
+  answer = setOptions(choices);
+}
+
+function WhatToDoWattson(){
+  addImage("nessie.jfif");
+  story("As you wake up and notice the broken robot, you go up to the robot with little knowledge on what to do with the broken robot. You start touching random parts of the broken robot but your not doing anything useful to help fix the broken robot. You stand there as a cute little nessie pops out, wondering what to do with the cute little wandering nessie as it looks up at you.");
+  choices = ["Take the nessie","Leave the nessie","Rob the nessie","Dance with the nessie"];
   answer = setOptions(choices);
 }
 
