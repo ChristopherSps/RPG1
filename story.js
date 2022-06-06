@@ -153,7 +153,7 @@ function Leave(){
 
 function rob(){
   addImage("NessieGotAKnife.png.png");
-  story("You look back at the nessie mischieviously and think about robbing him. You grab him and put him in a choke hold trying to rob his pockets but then you touch something very sharp cutting your finger and dropping the nessie. The nessie gets up from the floor and takes out a knife prepared to defend himself. Scared, you try to run away but the nessie is a trained assassin and throws the knife at your head, instantly killing you. You drop to the floor dead.");
+  story("You look back at the nessie mischievously and think about robbing him. You grab him and put him in a choke hold trying to rob his pockets but then you touch something very sharp cutting your finger and dropping the nessie. The nessie gets up from the floor and takes out a knife prepared to defend himself. Scared, you try to run away but the nessie is a trained assassin and throws the knife at your head, instantly killing you. You drop to the floor dead.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
