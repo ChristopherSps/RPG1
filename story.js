@@ -45,6 +45,9 @@ function checkAnswers(answer) {
     case "Rob the nessie":
       rob();
     break;
+    case "Dance with the nessie":
+      dance();
+    break;
     case "Wraith":
       Wraith();
     break;
@@ -158,6 +161,12 @@ function rob(){
   answer = setOptions(choices);
 }
 
+function dance(){
+  addImage("");
+  story("");
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
 
 function Wraith(){
   addImage("Wrai.png");
