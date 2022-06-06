@@ -18,6 +18,9 @@ function checkAnswers(answer) {
     case "Confirm Character Selection LifeLine":
       WhatToDoLifeLine();
     break;
+    case "Try to repair the broken robot":
+      Murdered();
+    break;
     case "Wattson":
       Watt();
     break;
@@ -79,7 +82,14 @@ function Life(){
 }
 
 function WhatToDoLifeLine(){
-  addImage("busStop.png");
+  addImage("broken robot.jfif");
+  story("As you examine the broken robot up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
+  choices = ["Try to repair the broken robot","Give up on repairing the broken robot","Salvage robot parts to use from the broken robot"];
+  answer = setOptions(choices);
+}
+
+function Murdered(){
+  addImage("broken robot.jfif");
   story("As you examine the broken robot up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
   choices = ["Try to repair the broken robot","Give up on repairing the broken robot","Salvage robot parts to use from the broken robot"];
   answer = setOptions(choices);
