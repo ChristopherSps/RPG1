@@ -133,7 +133,7 @@ function WhatToDoWattson(){
 
 function DressUp(){
   addImage("wattsonNessie'.jfif");
-  story("You pick up the nessie and dress it as a replica of yourself. The nessie giggles as he has been having so much fun with you and becomes overly attached to you. You try to put it back down but it growls and attaches to you, hiding in the hood of your sweater not wanting to leave. You keep trying to pull him out but he doesn't budge.Now you have a bigger problem on your hands.");
+  story("You pick up the nessie and dress it as a replica of yourself. The nessie giggles as he has been having so much fun with you and becomes overly attached to you. You try to put it back down but it growls and attaches to you, hiding in the hood of your sweater not wanting to leave. You keep trying to pull him out but he doesn't budge. Now you have a bigger problem on your hands.");
   choices = ["Leave him in your hoodie"];
   answer = setOptions(choices);
 }
