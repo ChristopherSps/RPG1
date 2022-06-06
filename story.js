@@ -36,6 +36,9 @@ function checkAnswers(answer) {
     case "Confirm Character Selection Wattson":
       WhatToDoWattson();
     break;
+    case "Dress up the nessie":
+      DressUp();
+    break;
     case "Wraith":
       Wraith();
     break;
@@ -124,7 +127,14 @@ function Watt(){
 function WhatToDoWattson(){
   addImage("nessie.jfif");
   story("As you wake up and notice the broken robot, you go up to the robot with little knowledge on what to do with the broken robot. You start touching random parts of the broken robot but your not doing anything useful to help fix the broken robot. You stand there as a cute little nessie pops out, wondering what to do with the cute little wandering nessie as it looks up at you.");
-  choices = ["Take the nessie","Leave the nessie","Rob the nessie","Dance with the nessie"];
+  choices = ["Dress up the nessie","Leave the nessie","Rob the nessie","Dance with the nessie"];
+  answer = setOptions(choices);
+}
+
+function DressUp(){
+  addImage("wattsonNessie.jfif");
+  story("");
+  choices = [""];
   answer = setOptions(choices);
 }
 
