@@ -89,7 +89,7 @@ function WhatToDoLifeLine(){
 }
 
 function Murdered(){
-  addImage("");
+  addImage("game over.gif");
   story("You start to fix the robot and repair him to the best of your ability until you come across his programming chip. On the chip it reads, DANGEROUS, but before you can do anything the robot boots up and turns out to be a murder robot. Before you can run away, you are murdered.");
   choices = ["Start over"];
   answer = setOptions(choices);
