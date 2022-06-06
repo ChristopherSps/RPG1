@@ -42,6 +42,9 @@ function checkAnswers(answer) {
     case "Leave the nessie":
       Leave();
     break;
+    case "Rob the nessie":
+      rob();
+    break;
     case "Wraith":
       Wraith();
     break;
@@ -142,11 +145,19 @@ function DressUp(){
 }
 
 function Leave(){
-  addImage("rampatNessie.jfif");
+  addImage("rampartNessie.jfif");
   story("You pay no mind to the nessie as the nessie is trying to grab your attention but you don't seem interested in caring for the nessie. The nessie grows a bit fustrated and angry as he doesn't like to be ignored. You turn your back and start to walk away until you hear a machine gun revving up. You look towards the nessie as you are horrified to see a laser pointed machine gun to your chest. He shoots the machine gun laughing like a maniac as bullets fill your body. You fall to the ground dead.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
+
+function rob(){
+  addImage("NessieGotAKnife.png.png");
+  story("You look back at the nessie mischieviously and think about robbing him. You grab him and put him in a choke hold trying to rob his pockets but then you touch something very sharp cutting your finger and dropping the nessie. The nessie gets up from the floor and takes out a knife prepared to defend himself. Scared, you try to run away but the nessie is a trained assassin and throws the knife at your head, instantly killing you. You drop to the floor dead.");
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
 
 function Wraith(){
   addImage("Wrai.png");
