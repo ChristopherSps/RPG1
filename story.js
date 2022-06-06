@@ -84,14 +84,13 @@ function Life(){
 function WhatToDoLifeLine(){
   addImage("broken robot.jfif");
   var messages = ("As you examine the broken robot up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
-  delayText(messages, 750);
   choices = ["Try to repair the broken robot","Give up on repairing the broken robot","Salvage robot parts to use from the broken robot"];
   answer = setOptions(choices);
 }
 
 function Murdered(){
   addImage("");
-  var messages = ("You start to fix the robot and repair him to the best of your ability until you come across his programming chip. On the chip it reads, DANGEROUS, but before you can do anything the robot boots up and turns out to be a murder robot. Before you can run away, you are murdered.");
+  story("You start to fix the robot and repair him to the best of your ability until you come across his programming chip. On the chip it reads, DANGEROUS, but before you can do anything the robot boots up and turns out to be a murder robot. Before you can run away, you are murdered.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
@@ -133,47 +132,5 @@ function Ramp(){
   var messages = ["Rampart is a Defensive Legend that specializes in securing areas through firepower. Her tactical ability Amped Cover places a rectangular wall. The upper half of a wall blocks a certain amount of bullets taken from one direction, and enhances any bullets fired through from the other direction. Her passive ability Modded Loader increases reload speed and magazine size with LMGs and her ultimate. Her ultimate ability Mobile Minigun named, Sheila, allows her to use a minigun that she can either carry or place down."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Rampart","Choose Different Character"];
-  answer = setOptions(choices);
-}
-
-function dressedEat(){
-  addImage("greenKitchen.png");
-  story("You have plenty of time for breakfast! So you prepare yourself some home-made scramble eggs, buttered toast and a nice glass of your choice of juice. Your morning is going great!!<br>You finish your meal, but before heading out, you wonder if you ever did your homework…");
-  choices = ["You didn't","You did"];
-  answer = setOptions(choices);
-}
-
-function noHomework(){
-  addImage("homeWork.png");
-  var messages = [ 'You didn’t.. Oh well. You head to school anyways.', 
-  'As you get there you remember that your homework was supposed to be the study guide for your up coming test!',
-  "You still have to take the test ya know, and you do! Hours pass as you wait for your results, I hope it's no surprise that you.",
-  'Failed. I mean what did you expect?'
-  ];
-  delayText(messages, 1000);
-  choices = ["Start over"];
-  answer = setOptions(choices);
-}
-
-function yesHomework(){
-  addImage("homeWork.png");
-  var messages = [ 'You did..great! You head to school and you’re all ready for your test, that homework study guide did come in handy last night.',
-  'You take the test, it was a stressful three hours of testing, though hours pass as you wait for your results.',
-  'I hope its no surprise that you.', 
-  'Passed! I mean what did you expect?'
-  ];
-  delayText(messages, 1000);
-  choices = ["You won!"];
-  answer = setOptions(choices);
-}
-
-function youWon(){
-  addImage("confetti.png");
-  var messages = [ 'You won, you got all the right combinations that resulted in the end :)',
-  'Are you missing some ending?', 
-  'If so, play again!'
-  ];
-  delayText(messages, 1000);
-  choices = ["Start over"];
   answer = setOptions(choices);
 }
