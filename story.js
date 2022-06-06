@@ -60,18 +60,6 @@ function checkAnswers(answer) {
     case "Confirm Character Selection Rampart":
       dressedSkip();
     break;
-    case "Eat Breakfast":
-      dressedEat();
-    break;
-    case "You didn't":
-      noHomework();
-    break;
-    case "You did":
-      yesHomework();
-    break;
-    case "You won!":
-      youWon();
-    break;
     }
 }
 
@@ -112,7 +100,7 @@ function giveUp(){
 }
 
 function bomb(){
-  addImage("game over.gif");
+  addImage("bomb.jfif");
   story("You salvage pieces from the broken robot and you have aqcuired enough pieces for a bomb. You start to remember that you are stuck inside this room and have come up with a plan. To blow up a hole in the wall.");
   choices = ["Blow up the bomb","Start over"];
   answer = setOptions(choices);
@@ -120,8 +108,8 @@ function bomb(){
 
 function bombExplosion(){
   addImage("game over.gif");
-  story("You salvage pieces from the broken robot and you have aqcuired enough pieces for a bomb. You start to remember that you are stuck inside this room and have come up with a plan. To blow up a hole in the wall.");
-  choices = ["Blow up the bomb","Start over"];
+  story("You plant the bomb next to the wall and set it off but then you quickly realize the radius of the explosion will kill everyone in that room. You quickly run to the bomb and try to turn it off but before you can even take step, it explodes killing everyone in the room.");
+  choices = ["Start over"];
   answer = setOptions(choices);
 }
 
