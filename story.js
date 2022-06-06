@@ -27,6 +27,9 @@ function checkAnswers(answer) {
     case "Salvage robot parts to use from the broken robot":
       bomb();
     break;
+    case "Blow up the bomb":
+      bombExplosion();
+    break;
     case "Wattson":
       Watt();
     break;
@@ -110,8 +113,15 @@ function giveUp(){
 
 function bomb(){
   addImage("game over.gif");
-  story("You give up on the robot not even bothering to take a look at how broken he is. You ignore the fact that he even exists in the room and now your fixated more on the actual room your locked inside. Then the intercom plays and it says,<br>You are stuck here forever!<br>You start to hyperventilate and slowly begin to pass out as you remember you are claustrophobic.");
-  choices = ["Start over"];
+  story("You salvage pieces from the broken robot and you have aqcuired enough pieces for a bomb. You start to remember that you are stuck inside this room and have come up with a plan. To blow up a hole in the wall.");
+  choices = ["Blow up the bomb","Start over"];
+  answer = setOptions(choices);
+}
+
+function bombExplosion(){
+  addImage("game over.gif");
+  story("You salvage pieces from the broken robot and you have aqcuired enough pieces for a bomb. You start to remember that you are stuck inside this room and have come up with a plan. To blow up a hole in the wall.");
+  choices = ["Blow up the bomb","Start over"];
   answer = setOptions(choices);
 }
 
