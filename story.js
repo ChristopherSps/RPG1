@@ -162,8 +162,8 @@ function rob(){
 }
 
 function dance(){
-  addImage("");
-  story("");
+  addImage("danceNessie.gif");
+  story("dsf");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
