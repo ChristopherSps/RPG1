@@ -21,6 +21,12 @@ function checkAnswers(answer) {
     case "Try to repair the broken robot":
       Murdered();
     break;
+    case "Give up on repairing the broken robot":
+      giveUp();
+    break;
+    case "Salvage robot parts to use from the broken robot":
+      bomb();
+    break;
     case "Wattson":
       Watt();
     break;
@@ -91,6 +97,20 @@ function WhatToDoLifeLine(){
 function Murdered(){
   addImage("game over.gif");
   story("You start to fix the robot and repair him to the best of your ability until you come across his programming chip. On the chip it reads, DANGEROUS, but before you can do anything the robot boots up and turns out to be a murder robot. Before you can run away, you are murdered.");
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function giveUp(){
+  addImage("game over.gif");
+  story("You give up on the robot not even bothering to take a look at how broken he is. You ignore the fact that he even exists in the room and now your fixated more on the actual room your locked inside. Then the intercom plays and it says,<br>You are stuck here forever!<br>You start to hyperventilate and slowly begin to pass out as you remember you are claustrophobic.");
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function bomb(){
+  addImage("game over.gif");
+  story("You give up on the robot not even bothering to take a look at how broken he is. You ignore the fact that he even exists in the room and now your fixated more on the actual room your locked inside. Then the intercom plays and it says,<br>You are stuck here forever!<br>You start to hyperventilate and slowly begin to pass out as you remember you are claustrophobic.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
