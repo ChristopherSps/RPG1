@@ -146,13 +146,13 @@ function WhatToDoWattson(){
 function DressUp(){
   addImage("wattsonNessie'.jfif");
   story("You pick up the nessie and dress it as a replica of yourself. The nessie giggles as he has been having so much fun with you and becomes overly attached to you. You try to put it back down but it growls and attaches to you, hiding in the hood of your sweater not wanting to leave. You keep trying to pull him out but he doesn't budge. Now you have a bigger problem on your hands.");
-  choices = ["Leave him in your hoodie"];
+  choices = ["Leave him in your hoodie","Start over"];
   answer = setOptions(choices);
 }
 
 function tripped(){
   addImage("walkNessie.gif");
-  story("");
+  story("The nessie jumps out your hoodie furiously and you guys walk around in a bit of fustration. As you two walk around to think about what's next to do to get out of that hell hole your in, the room. The nessie, still holding a grudge, trips you and you instantly fall on your head, shattering your skull and dying.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
