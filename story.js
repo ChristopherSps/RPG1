@@ -147,6 +147,13 @@ function DressUp(){
   answer = setOptions(choices);
 }
 
+function crack(){
+  addImage("");
+  story("You pick up the nessie and dress it as a replica of yourself. The nessie giggles as he has been having so much fun with you and becomes overly attached to you. You try to put it back down but it growls and attaches to you, hiding in the hood of your sweater not wanting to leave. You keep trying to pull him out but he doesn't budge. Now you have a bigger problem on your hands.");
+  choices = ["Leave him in your hoodie"];
+  answer = setOptions(choices);
+}
+
 function Leave(){
   addImage("rampartNessie.jfif");
   story("You pay no mind to the nessie as the nessie is trying to grab your attention but you don't seem interested in caring for the nessie. The nessie grows a bit fustrated and angry as he doesn't like to be ignored. You turn your back and start to walk away until you hear a machine gun revving up. You look towards the nessie as you are horrified to see a laser pointed machine gun to your chest. He shoots the machine gun laughing like a maniac as bullets fill your body. You fall to the ground dead.");
