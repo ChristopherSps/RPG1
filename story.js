@@ -163,7 +163,7 @@ function rob(){
 
 function dance(){
   addImage("danceNessie.gif");
-  story("dsf");
+  story("You start to throw back that booty, dancing with the nessie, living the dream. You two happily dance your lives away as you guys get old in the room never breaking out or seeing sunlight ever again. You guys live happily ever after together, dancing like celebrity popstars.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
