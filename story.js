@@ -55,7 +55,10 @@ function checkAnswers(answer) {
       Wraith();
     break;
     case "Confirm Character Selection Wraith":
-      dressedSkip();
+      notCared();
+    break;
+    case "Make a second portal and take it blindly":
+      portal();
     break;
     case "Horizon":
       Horiz();
@@ -183,6 +186,20 @@ function Wraith(){
   var messages =["A versatile Legend, Wraith can reposition and flank enemies with her abilities. Wraith's tactical ability Into the Void allows her to reposition or take cover while being invincible for 4 seconds. Wraith's ultimate ability is Dimensional Rift. Dimensional Rift places an entrance and exit portal that allows her squad to be safely transported over long distances. Her passive ability Voices from the Void. Voices from the Void gives her and her teammates audible warnings about enemies aiming at them."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Wraith","Choose Different Character"];
+  answer = setOptions(choices);
+}
+
+function notCared(){
+  addImage("");
+  story("You see the broken robot on the floor but to be honest, you don't really care. You show no emotion to the robot but instead, you are more interested in breaking out of the room. You tried to phase into another dimension but there is nowhere you can go since it is just a room with four walls. You start to realize and remember that you have placed one portal somewhere you can't remember but it is dangerous to place the other portal. You also see in the corner of your eye a havoc on the floor and a deathbox in the corner of your eye. You start to pace in circles, thinking about what to do.");
+  choices = ["Make a second portal and take it blindly","Take the havoc","Loot the deathbox"];
+  answer = setOptions(choices);
+}
+
+function portal(){
+  addImage("");
+  story("");
+  choices = ["Start over"];
   answer = setOptions(choices);
 }
 
