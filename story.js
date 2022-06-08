@@ -60,6 +60,12 @@ function checkAnswers(answer) {
     case "Make a second portal and take it blindly":
       portal();
     break;
+    case "Take the havoc":
+      havoc();
+    break;
+    case "Loot the deathbox":
+      deathBox();
+    break;
     case "Horizon":
       Horiz();
     break;
@@ -197,7 +203,21 @@ function notCared(){
 }
 
 function portal(){
-  addImage("");
+  addImage("portal.gif");
+  story("");
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function havoc(){
+  addImage("havoc.jfif");
+  story("");
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function deathBox(){
+  addImage("havoc.jfif");
   story("");
   choices = ["Start over"];
   answer = setOptions(choices);
