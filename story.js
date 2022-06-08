@@ -204,7 +204,7 @@ function notCared(){
 
 function portal(){
   addImage("portal.gif");
-  story("");
+  story("You make a second portal and get ready to jump into the portal. You take a leap of faith but when you come out the other side, you start to free fall off a cliff. Looking back up, the portal was placed on the edge of a cliff and so when you took the leap of faith, you jumped right off the cliff to your death. You have died.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
@@ -217,7 +217,7 @@ function havoc(){
 }
 
 function deathBox(){
-  addImage("havoc.jfif");
+  addImage("death.jfif");
   story("");
   choices = ["Start over"];
   answer = setOptions(choices);
