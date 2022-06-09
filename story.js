@@ -196,7 +196,7 @@ function Wraith(){
 }
 
 function notCared(){
-  addImage("");
+  addImage("noEmotion.png");
   story("You see the broken robot on the floor but to be honest, you don't really care. You show no emotion to the robot but instead, you are more interested in breaking out of the room. You tried to phase into another dimension but there is nowhere you can go since it is just a room with four walls. You start to realize and remember that you have placed one portal somewhere you can't remember but it is dangerous to place the other portal. You also see in the corner of your eye a havoc on the floor and a deathbox in the corner of your eye. You start to pace in circles, thinking about what to do.");
   choices = ["Make a second portal and take it blindly","Take the havoc","Loot the deathbox"];
   answer = setOptions(choices);
