@@ -84,9 +84,6 @@ function checkAnswers(answer) {
     case "Continue playing with Hack":
       Hack();
     break;
-    case "Fix Hack":
-      Fix();
-    break;
     case "Mourn for Hack":
       Mourn();
     break;
@@ -296,15 +293,7 @@ function Hack(){
   addImage("renewedCrypto.gif");
   var messages = ["You continue to play with Hack but something starts to go wrong. Hack starts to smoke and he explodes right in front of you injuring you really badly. As a last defense mechanism, Hack turns you half robotic so that you can live, giving up his own life for you. You are unconcious for a few minutes but as you wake up you start to examine yoruself surprised, but you quickly understand the situation. You start to wonder if you can fix Hack again."];
   delayText(messages, 750);
-  choices = ["Fix Hack","Mourn for Hack"];
-  answer = setOptions(choices);
-}
-
-function Fix(){
-  addImage("");
-  var messages = [""];
-  delayText(messages, 750);
-  choices = ["Start over"];
+  choices = ["Mourn for Hack"];
   answer = setOptions(choices);
 }
 
