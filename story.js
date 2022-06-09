@@ -76,7 +76,7 @@ function checkAnswers(answer) {
       Cryp();
     break;
     case "Confirm Character Selection Crypto":
-      dressedSkip();
+      WhatToDoCrypto();
     break;
     case "Rampart":
       Ramp();
@@ -261,6 +261,14 @@ function Cryp(){
   var messages = ["A Recon Legend, Crypto takes to the skies with his Surveillance Drone named, hack, revealing enemies for Crypto and his squad using Neurolink. Crytpo has the ability to look through his hack and see his surroundings while controlling hack."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Crypto","Choose Different Character"];
+  answer = setOptions(choices);
+}
+
+function WhatToDoCrypto(){
+  addImage("cryptoAndHack.jfif");
+  var messages = ["You sit in the room chilling as you can't really do much. You start playing with hack and having fun with him since you both can't go anywhere within the walls you are confined in."];
+  delayText(messages, 750);
+  choices = ["","Sleep","Continue playin with Hack"];
   answer = setOptions(choices);
 }
 
