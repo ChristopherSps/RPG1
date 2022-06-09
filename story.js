@@ -87,6 +87,12 @@ function checkAnswers(answer) {
     case "Throw the coin away":
       throww();
     break;
+    case "Keep the coin":
+      keep();
+    break;
+    case "Eat the coin":
+      eat();
+    break;
     }
 }
 
@@ -277,6 +283,22 @@ function sell(){
 function throww(){
   addImage("arcStar.webp");
   var messages = ["You throw the coin away in front of the nessies face and show him utter disrespect. He gets angry at the fact that you guys could've had a good buisness together. He takes an arc star and throws it at you, sticking you with the arc star and ultimately killing you with the explosion."];
+  delayText(messages, 750);
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function keep(){
+  addImage("");
+  var messages = [""];
+  delayText(messages, 750);
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function eat(){
+  addImage("NessieGotAKnife.png.png");
+  var messages = ["You flip the coin in the air and gulp the coin down your mouth in front of the nessie. He is shocked, surprised while also angry that you ate away teh relationship token he gave you. He pulls out a knife and starts to step towards you. You step back in fear and he jumps on you, pinning you against the wall. He puts the knife up to your belly and slices, wanting the coin back as you lay on the floor dying. You have died."];
   delayText(messages, 750);
   choices = ["Start over"];
   answer = setOptions(choices);
