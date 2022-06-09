@@ -289,7 +289,7 @@ function throww(){
 }
 
 function keep(){
-  addImage("");
+  addImage("apexCoins.jfif");
   var messages = ["You keep the coin and tuck it away in your back pocket. The nessie smiles warmly at you while you smile warmly back at him. You guys exchange handshakes as you both understand that your buisness will boom without fail. Nodding at each other as you both dream at the amount of money and dreams you will accomplish with the buisness laughing away. You have found a good ending!"];
   delayText(messages, 750);
   choices = ["Start over"];
