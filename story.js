@@ -280,17 +280,17 @@ function WhatToDoCrypto(){
 
 function Sleep(){
   addImage("sister.jfif");
-  var messages = ["You start to doze off and sleep, hugging with Hack. You dream about the old days with your sister and wishing you can see her one last time. You smile as tears roll down your face as you sleep remembering all the good times you had with your sister. You start to wish you can stay in your dream forever as it warms your heart."];
+  var messages = ["You start to doze off and sleep, hugging with Hack. You dream about the old days with your sister and wishing you can see her one last time. You smile as tears roll down your face as you sleep remembering all the good times you had with your sister. You start to wish you can stay in your dream forever as it warms your heart. You continue to dream never wanting to leave as you enjoy every moment you get to spend in your dream. You got a heartwarming ending!"];
   delayText(messages, 750);
-  choices = [""];
+  choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function Hack(){
-  addImage("cryptoAndHack.jfif");
-  var messages = ["You sit in the room chilling as you can't really do much. You start playing with hack and having fun with him since you both can't go anywhere within the walls you are confined in."];
+  addImage("renewedCrypto.gif");
+  var messages = [""];
   delayText(messages, 750);
-  choices = ["Sleep","Continue playing with Hack"];
+  choices = [""];
   answer = setOptions(choices);
 }
 
