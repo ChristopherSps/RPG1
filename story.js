@@ -84,6 +84,12 @@ function checkAnswers(answer) {
     case "Continue playing with Hack":
       Hack();
     break;
+    case "Fix Hack":
+      Fix();
+    break;
+    case "Mourn for Hack":
+      Mourn();
+    break;
     case "Rampart":
       Ramp();
     break;
@@ -288,9 +294,25 @@ function Sleep(){
 
 function Hack(){
   addImage("renewedCrypto.gif");
+  var messages = ["You continue to play with Hack but something starts to go wrong. Hack starts to smoke and he explodes right in front of you injuring you really badly. As a last defense mechanism, Hack turns you half robotic so that you can live, giving up his own life for you. You are unconcious for a few minutes but as you wake up you start to examine yoruself surprised, but you quickly understand the situation. You start to wonder if you can fix Hack again."];
+  delayText(messages, 750);
+  choices = ["Fix Hack","Mourn for Hack"];
+  answer = setOptions(choices);
+}
+
+function Fix(){
+  addImage("");
   var messages = [""];
   delayText(messages, 750);
-  choices = [""];
+  choices = ["Start over"];
+  answer = setOptions(choices);
+}
+
+function Mourn(){
+  addImage("sad.jfif");
+  var messages = ["You sit there sad and praying over Hacks components hoping that wherever he is, he is happy. Wattson comes over and sits next to you to share the pain you feel as she is empathetic and understands what you are going through. You guys sit there, looking at Hacks components scattered across the room in silence. You got a sad ending!"];
+  delayText(messages, 750);
+  choices = ["Start over"];
   answer = setOptions(choices);
 }
 
