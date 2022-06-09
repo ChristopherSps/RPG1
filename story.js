@@ -211,14 +211,14 @@ function portal(){
 
 function havoc(){
   addImage("havoc.jfif");
-  story("");
+  story("You walk towards the havoc and grab it off the floor. Once you pick it up, it is glued to your hands with the gun malfunctioning. You try to smash the gun to pieces but nothing is working as you violently and helplessly shoot the gun around in the room. The bad part is that the bullets are ricocheting around the room. You try to duck but you can't while the gun is going beserk in your hand. The bullets pierce your body and you fall to the ground with holes up and down your body as you are dead.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function deathBox(){
   addImage("death.jfif");
-  story("");
+  story("You start to walk towards a deathbox in the corner of the room hoping that whoever was the last victim will have some loot for you to take. You open the lootbox and hear a click. Your heart drops when you realize that the deathbox was a trap. The moment you opened the lootbox, a grenade pin got pulled and exploded 5 seconds later with you not able to do anything. You have exploded to your death.");
   choices = ["Start over"];
   answer = setOptions(choices);
 }
