@@ -82,14 +82,15 @@ function checkAnswers(answer) {
       Ramp();
     break;
     case "Confirm Character Selection Rampart":
-      dressedSkip();
+      sell();
     break;
     }
 }
 
 function characterSelection(){
   addImage("Character.gif");
-  story("You wake up in a room with 5 other legends but your surprised when you see a broken robot on the floor. As your eyes focus on the broken robot, you realize that the broken robot was badly damaged and mangled on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a broken robot beside all of you. <br> Choose your legend to be!");
+  var messages = ["You wake up in a room with 5 other legends but your surprised when you see a broken robot on the floor. As your eyes focus on the broken robot, you realize that the broken robot was badly damaged and mangled on the floor. You scream in terror waking the other 5 legends up as you all are confused on how you got there and where you are. You head towards the door to leave but it's locked. Your trapped inside the room with a unknown killer and a broken robot beside all of you. <br> Choose your legend to be!"];
+  delayText(messages, 750);
   choices = ["LifeLine","Wattson","Wraith","Horizon","Crypto","Rampart"];
   answer = setOptions(choices);
 }
@@ -104,35 +105,40 @@ function Life(){
 
 function WhatToDoLifeLine(){
   addImage("broken robot.jfif");
-  var messages = ("As you examine the broken robot up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body.");
+  var messages = ["As you examine the broken robot up and down with your medical knowledge, you start to realize that he is badly damage and in critical state. You walk towards him to examine him a bit better but the other awoken legends start to question what to do with the body."];
+  delayText(messages, 750);
   choices = ["Try to repair the broken robot","Give up on repairing the broken robot","Salvage robot parts to use from the broken robot"];
   answer = setOptions(choices);
 }
 
 function Murdered(){
   addImage("game over.gif");
-  story("You start to fix the robot and repair him to the best of your ability until you come across his programming chip. On the chip it reads, DANGEROUS, but before you can do anything the robot boots up and turns out to be a murder robot. Before you can run away, you are murdered.");
+  var messages = ["You start to fix the robot and repair him to the best of your ability until you come across his programming chip. On the chip it reads, DANGEROUS, but before you can do anything the robot boots up and turns out to be a murder robot. Before you can run away, you are murdered."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function giveUp(){
   addImage("game over.gif");
-  story("You give up on the robot not even bothering to take a look at how broken he is. You ignore the fact that he even exists in the room and now your fixated more on the actual room your locked inside. Then the intercom plays and it says,<br>You are stuck here forever!<br>You start to hyperventilate and slowly begin to pass out as you remember you are claustrophobic.");
+  var messages = ["You give up on the robot not even bothering to take a look at how broken he is. You ignore the fact that he even exists in the room and now your fixated more on the actual room your locked inside. Then the intercom plays and it says,<br>You are stuck here forever!<br>You start to hyperventilate and slowly begin to pass out as you remember you are claustrophobic."];
+  delayText(messages, 750);
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function bomb(){
   addImage("bomb.jfif");
-  story("You salvage pieces from the broken robot and you have aqcuired enough pieces for a bomb. You start to remember that you are stuck inside this room and have come up with a plan. To blow up a hole in the wall.");
+  var messages = ["You salvage pieces from the broken robot and you have aqcuired enough pieces for a bomb. You start to remember that you are stuck inside this room and have come up with a plan. To blow up a hole in the wall."];
+  delayText(messages, 750);  
   choices = ["Blow up the bomb","Start over"];
   answer = setOptions(choices);
 }
 
 function bombExplosion(){
   addImage("game over.gif");
-  story("You plant the bomb next to the wall and set it off but then you quickly realize the radius of the explosion will kill everyone in that room. You quickly run to the bomb and try to turn it off but before you can even take step, it explodes killing everyone in the room.");
+  var messages = ["You plant the bomb next to the wall and set it off but then you quickly realize the radius of the explosion will kill everyone in that room. You quickly run to the bomb and try to turn it off but before you can even take step, it explodes killing everyone in the room."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
@@ -147,42 +153,48 @@ function Watt(){
 
 function WhatToDoWattson(){
   addImage("nessie.jfif");
-  story("As you wake up and notice the broken robot, you go up to the robot with little knowledge on what to do with the broken robot. You start touching random parts of the broken robot but your not doing anything useful to help fix the broken robot. You stand there as a cute little nessie pops out, wondering what to do with the cute little wandering nessie as it looks up at you.");
+  var messages = ["As you wake up and notice the broken robot, you go up to the robot with little knowledge on what to do with the broken robot. You start touching random parts of the broken robot but your not doing anything useful to help fix the broken robot. You stand there as a cute little nessie pops out, wondering what to do with the cute little wandering nessie as it looks up at you."];
+  delayText(messages, 750);  
   choices = ["Dress up the nessie","Leave the nessie","Rob the nessie","Dance with the nessie"];
   answer = setOptions(choices);
 }
 
 function DressUp(){
   addImage("wattsonNessie'.jfif");
-  story("You pick up the nessie and dress it as a replica of yourself. The nessie giggles as he has been having so much fun with you and becomes overly attached to you. You try to put it back down but it growls and attaches to you, hiding in the hood of your sweater not wanting to leave. You keep trying to pull him out but he doesn't budge. Now you have a bigger problem on your hands.");
+  var messages = ["You pick up the nessie and dress it as a replica of yourself. The nessie giggles as he has been having so much fun with you and becomes overly attached to you. You try to put it back down but it growls and attaches to you, hiding in the hood of your sweater not wanting to leave. You keep trying to pull him out but he doesn't budge. Now you have a bigger problem on your hands."];
+  delayText(messages, 750);  
   choices = ["Leave him in your hoodie"];
   answer = setOptions(choices);
 }
 
 function tripped(){
   addImage("walkNessie.gif");
-  story("The nessie jumps out your hoodie furiously and you guys walk around in a bit of fustration. As you two walk around to think about what's next to do to get out of that hell hole your in, the room. The nessie, still holding a grudge, trips you and you instantly fall on your head, shattering your skull and dying.");
+  var messages = ["The nessie jumps out your hoodie furiously and you guys walk around in a bit of fustration. As you two walk around to think about what's next to do to get out of that hell hole your in, the room. The nessie, still holding a grudge, trips you and you instantly fall on your head, shattering your skull and dying."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function Leave(){
   addImage("rampartNessie.jfif");
-  story("You pay no mind to the nessie as the nessie is trying to grab your attention but you don't seem interested in caring for the nessie. The nessie grows a bit fustrated and angry as he doesn't like to be ignored. You turn your back and start to walk away until you hear a machine gun revving up. You look towards the nessie as you are horrified to see a laser pointed machine gun to your chest. He shoots the machine gun laughing like a maniac as bullets fill your body. You fall to the ground dead.");
+  var messages = ["You pay no mind to the nessie as the nessie is trying to grab your attention but you don't seem interested in caring for the nessie. The nessie grows a bit fustrated and angry as he doesn't like to be ignored. You turn your back and start to walk away until you hear a machine gun revving up. You look towards the nessie as you are horrified to see a laser pointed machine gun to your chest. He shoots the machine gun laughing like a maniac as bullets fill your body. You fall to the ground dead."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function rob(){
   addImage("NessieGotAKnife.png.png");
-  story("You look back at the nessie mischievously and think about robbing him. You grab him and put him in a choke hold trying to rob his pockets but then you touch something very sharp cutting your finger and dropping the nessie. The nessie gets up from the floor and takes out a knife prepared to defend himself. Scared, you try to run away but the nessie is a trained assassin and throws the knife at your head, instantly killing you. You drop to the floor dead.");
+  var messages = ["You look back at the nessie mischievously and think about robbing him. You grab him and put him in a choke hold trying to rob his pockets but then you touch something very sharp cutting your finger and dropping the nessie. The nessie gets up from the floor and takes out a knife prepared to defend himself. Scared, you try to run away but the nessie is a trained assassin and throws the knife at your head, instantly killing you. You drop to the floor dead."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function dance(){
   addImage("danceNessie.gif");
-  story("You start to throw back that booty, dancing with the nessie, living the dream. You two happily dance your lives away as you guys get old in the room never breaking out or seeing sunlight ever again. You guys live happily ever after together, dancing like celebrity popstars.");
+  var messages = ["You start to throw back that booty, dancing with the nessie, living the dream. You two happily dance your lives away as you guys get old in the room never breaking out or seeing sunlight ever again. You guys live happily ever after together, dancing like celebrity popstars."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
@@ -197,28 +209,32 @@ function Wraith(){
 
 function notCared(){
   addImage("noEmotion.png");
-  story("You see the broken robot on the floor but to be honest, you don't really care. You show no emotion to the robot but instead, you are more interested in breaking out of the room. You tried to phase into another dimension but there is nowhere you can go since it is just a room with four walls. You start to realize and remember that you have placed one portal somewhere you can't remember but it is dangerous to place the other portal. You also see in the corner of your eye a havoc on the floor and a deathbox in the corner of your eye. You start to pace in circles, thinking about what to do.");
+  var messages = ["You see the broken robot on the floor but to be honest, you don't really care. You show no emotion to the robot but instead, you are more interested in breaking out of the room. You tried to phase into another dimension but there is nowhere you can go since it is just a room with four walls. You start to realize and remember that you have placed one portal somewhere you can't remember but it is dangerous to place the other portal. You also see in the corner of your eye a havoc on the floor and a deathbox in the corner of your eye. You start to pace in circles, thinking about what to do."];
+  delayText(messages, 750);  
   choices = ["Make a second portal and take it blindly","Take the havoc","Loot the deathbox"];
   answer = setOptions(choices);
 }
 
 function portal(){
   addImage("portal.gif");
-  story("You make a second portal and get ready to jump into the portal. You take a leap of faith but when you come out the other side, you start to free fall off a cliff. Looking back up, the portal was placed on the edge of a cliff and so when you took the leap of faith, you jumped right off the cliff to your death. You have died.");
+  var messages = ["You make a second portal and get ready to jump into the portal. You take a leap of faith but when you come out the other side, you start to free fall off a cliff. Looking back up, the portal was placed on the edge of a cliff and so when you took the leap of faith, you jumped right off the cliff to your death. You have died."];
+  delayText(messages, 750); 
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function havoc(){
   addImage("havoc.jfif");
-  story("You walk towards the havoc and grab it off the floor. Once you pick it up, it is glued to your hands with the gun malfunctioning. You try to smash the gun to pieces but nothing is working as you violently and helplessly shoot the gun around in the room. The bad part is that the bullets are ricocheting around the room. You try to duck but you can't while the gun is going beserk in your hand. The bullets pierce your body and you fall to the ground with holes up and down your body as you are dead.");
+  var messages = ["You walk towards the havoc and grab it off the floor. Once you pick it up, it is glued to your hands with the gun malfunctioning. You try to smash the gun to pieces but nothing is working as you violently and helplessly shoot the gun around in the room. The bad part is that the bullets are ricocheting around the room. You try to duck but you can't while the gun is going beserk in your hand. The bullets pierce your body and you fall to the ground with holes up and down your body as you are dead."];
+  delayText(messages, 750); 
   choices = ["Start over"];
   answer = setOptions(choices);
 }
 
 function deathBox(){
   addImage("death.jfif");
-  story("You start to walk towards a deathbox in the corner of the room hoping that whoever was the last victim will have some loot for you to take. You open the lootbox and hear a click. Your heart drops when you realize that the deathbox was a trap. The moment you opened the lootbox, a grenade pin got pulled and exploded 5 seconds later with you not able to do anything. You have exploded to your death.");
+  var messages = ["You start to walk towards a deathbox in the corner of the room hoping that whoever was the last victim will have some loot for you to take. You open the lootbox and hear a click. Your heart drops when you realize that the deathbox was a trap. The moment you opened the lootbox, a grenade pin got pulled and exploded 5 seconds later with you not able to do anything. You have exploded to your death."];
+  delayText(messages, 750);  
   choices = ["Start over"];
   answer = setOptions(choices);
 }
@@ -244,5 +260,13 @@ function Ramp(){
   var messages = ["Rampart is a Defensive Legend that specializes in securing areas through firepower. Her tactical ability Amped Cover places a rectangular wall. The upper half of a wall blocks a certain amount of bullets taken from one direction, and enhances any bullets fired through from the other direction. Her passive ability Modded Loader increases reload speed and magazine size with LMGs and her ultimate. Her ultimate ability Mobile Minigun named, Sheila, allows her to use a minigun that she can either carry or place down."];
   delayText(messages, 750);
   choices = ["Confirm Character Selection Rampart","Choose Different Character"];
+  answer = setOptions(choices);
+}
+
+function sell(){
+  addImage("mrNessie.jfif");
+  var messages = [""];
+  delayText(messages, 750);
+  choices = ["Start over"];
   answer = setOptions(choices);
 }
