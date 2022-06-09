@@ -9,6 +9,7 @@ var messages = [];
 var choices;
 var answer;
 var hasImage = false;
+var sceneNum = 0;
 
 function start() {
   setup();
@@ -34,7 +35,7 @@ function setOptions(options) {
 }
 
 function story(text) {
-  storytext.innerHTML = text;
+  storyText.innerHTML = "<span>Scene:"+sceneNum+"</span><br>"+text;
 }
 
 function delayText(text, delay) {
@@ -55,7 +56,7 @@ function delayText(text, delay) {
 function addImage(imageURL){
   let image = document.createElement("img");
   image.src = imageURL;
-  image.setAttribute("width", "350px");
+  image.setAttribute("width", "30px");
   var storyBox = document.getElementById("storybox");
   if (hasImage == true) {
       storyBox.innerHTML="";
