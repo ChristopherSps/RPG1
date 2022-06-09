@@ -268,7 +268,7 @@ function WhatToDoCrypto(){
   addImage("cryptoAndHack.jfif");
   var messages = ["You sit in the room chilling as you can't really do much. You start playing with hack and having fun with him since you both can't go anywhere within the walls you are confined in."];
   delayText(messages, 750);
-  choices = ["","Sleep","Continue playin with Hack"];
+  choices = ["Sleep","Continue playin with Hack"];
   answer = setOptions(choices);
 }
 
