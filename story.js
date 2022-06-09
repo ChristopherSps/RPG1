@@ -78,6 +78,12 @@ function checkAnswers(answer) {
     case "Confirm Character Selection Crypto":
       WhatToDoCrypto();
     break;
+    case "Sleep":
+      Sleep();
+    break;
+    case "Continue playing with Hack":
+      Hack();
+    break;
     case "Rampart":
       Ramp();
     break;
@@ -268,7 +274,23 @@ function WhatToDoCrypto(){
   addImage("cryptoAndHack.jfif");
   var messages = ["You sit in the room chilling as you can't really do much. You start playing with hack and having fun with him since you both can't go anywhere within the walls you are confined in."];
   delayText(messages, 750);
-  choices = ["Sleep","Continue playin with Hack"];
+  choices = ["Sleep","Continue playing with Hack"];
+  answer = setOptions(choices);
+}
+
+function Sleep(){
+  addImage("sister.jfif");
+  var messages = ["You start to doze off and sleep, hugging with Hack. You dream about the old days with your sister and wishing you can see her one last time. You smile as tears roll down your face as you sleep remembering all the good times you had with your sister. You start to wish you can stay in your dream forever as it warms your heart."];
+  delayText(messages, 750);
+  choices = [""];
+  answer = setOptions(choices);
+}
+
+function Hack(){
+  addImage("cryptoAndHack.jfif");
+  var messages = ["You sit in the room chilling as you can't really do much. You start playing with hack and having fun with him since you both can't go anywhere within the walls you are confined in."];
+  delayText(messages, 750);
+  choices = ["Sleep","Continue playing with Hack"];
   answer = setOptions(choices);
 }
 
