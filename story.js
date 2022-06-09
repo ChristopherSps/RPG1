@@ -84,6 +84,9 @@ function checkAnswers(answer) {
     case "Confirm Character Selection Rampart":
       sell();
     break;
+    case "Throw the coin away":
+      throww();
+    break;
     }
 }
 
@@ -265,7 +268,15 @@ function Ramp(){
 
 function sell(){
   addImage("mrNessie.jfif");
-  var messages = [""];
+  var messages = ["You start a selling company with a nessie that you saw in the corner of your eye. You agreed to split the money 50/50 and will be selling black market weapons once your out of the room. He gives you a token of appreciation to show the importance of your partnership by giving you a lucky coin. Your stunned as what to do with the coin."];
+  delayText(messages, 750);
+  choices = ["Throw the coin away","Keep the coin","Eat the coin"];
+  answer = setOptions(choices);
+}
+
+function throww(){
+  addImage("arcStar.webp");
+  var messages = ["You throw the coin away in front of the nessies face and show him utter disrespect. He gets angry at the fact that you guys could've had a good buisness together. He takes an arc star and throws it at you, sticking you with the arc star and ultimately killing you with the explosion."];
   delayText(messages, 750);
   choices = ["Start over"];
   answer = setOptions(choices);
