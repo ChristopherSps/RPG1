@@ -14,14 +14,14 @@ html {
   border-radius: 25px;
   width: 880px;
   margin: 10px auto;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 #currentStory {
   display:block;
   border-radius: 5px;
   font-size: 20px;
-  background-color: rgb(212, 239, 223  );
+  background-color: rgb(212, 239, 223);
   padding:15px;
   margin-bottom: 20px;
   margin-right: 14px;
@@ -31,7 +31,7 @@ html {
 select {
   width: 95%;
   font-size: 20px;
-  background-color: rgb(212, 239, 223  );
+  background-color: rgb(212, 239, 223);
   padding-top: 0px;
   margin-top: 2px;
   margin-bottom: 9px;
@@ -43,7 +43,7 @@ button {
   width: 95%;
   height: 90px;
   font-size: 20px;
-  background-color: rgb(212, 239, 223  );
+  background-color: rgb(212, 239, 223);
   margin-top: 2px;
   margin-bottom: 9px;
   margin-right: 19px;
@@ -69,4 +69,8 @@ select#choices:hover {
 #currentStory {
   width: 410px;
   margin-left: 420px;
+}
+
+img {
+  width: 300px;
 }
