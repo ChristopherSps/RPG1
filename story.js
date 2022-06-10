@@ -66,21 +66,6 @@ function checkAnswers(answer) {
     case "Loot the deathbox":
       deathBox();
     break;
-    case "Horizon":
-      Horiz();
-    break;
-    case "Confirm Character Selection Horizon":
-      picnic();
-    break;
-    case "Eat the pizza":
-      pizza();
-    break;
-    case "Eat the sandwich":
-      sandwich();
-    break;
-    case "Drink the glass of water":
-      water();
-    break;
     case "Crypto":
       Cryp();
     break;
@@ -262,46 +247,6 @@ function deathBox(){
   addImage("death.jfif");
   var messages = ["You start to walk towards a deathbox in the corner of the room hoping that whoever was the last victim will have some loot for you to take. You open the lootbox and hear a click. Your heart drops when you realize that the deathbox was a trap. The moment you opened the lootbox, a grenade pin got pulled and exploded 5 seconds later with you not able to do anything. You have exploded to your death."];
   delayText(messages, 750);  
-  choices = ["Start over"];
-  answer = setOptions(choices);
-}
-
-function Horiz(){
-  addImage("Hori.png");
-  var messages = ["Horizon is an Offensive Legend with gravity-based abilities. Her tactical ability Gravity Lift, when deployed on the ground, lifts any player that steps into it into the air. Her passive ability Spacewalk increases her in-air movement speed and decreases her movement delay after falling from a height."];
-  delayText(messages, 750);
-  choices = ["Confirm Character Selection Horizon","Choose Different Character"];
-  answer = setOptions(choices);
-}
-
-function picnic(){
-  addImage("pic.jfif");
-  var messages = ["You examine the room and choose not to panic. You lay a blanket on the floor with some food that you found laying around. You see three, scrumptious, delicious choices. Pizza, a sandwich and a glass of water. You think about your choice carefully as you don't know what could be contained in the ingredients."];
-  delayText(messages, 750);
-  choices = ["Eat the pizza","Eat the sandwich","Drink the glass of water"];
-  answer = setOptions(choices);
-}
-
-function pizza(){
-  addImage("");
-  var messages = [""];
-  delayText(messages, 750);
-  choices = ["Start over"];
-  answer = setOptions(choices);
-}
-
-function sandwich(){
-  addImage("");
-  var messages = [""];
-  delayText(messages, 750);
-  choices = ["Start over"];
-  answer = setOptions(choices);
-}
-
-function water(){
-  addImage("");
-  var messages = [""];
-  delayText(messages, 750);
   choices = ["Start over"];
   answer = setOptions(choices);
 }
