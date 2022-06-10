@@ -72,5 +72,5 @@ select#choices:hover {
 }
 
 img {
-  width: 400px;
+  width: 400px!important;
 }
